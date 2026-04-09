@@ -1,0 +1,13 @@
+#include <stdio.h>
+int stack[6];
+int top=-1;
+
+void push (int val){
+    if(top<6)
+    stack[++top]=val;
+}
+int main(){
+    push(5);
+    push(6);
+    printf("%d",stack[top]);
+ return 0;}
